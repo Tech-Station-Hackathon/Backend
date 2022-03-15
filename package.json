@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TECO-Tech-Station-Hackaton-Team-2/Backend.git"
+  },
+  "author": "TECO Tech Station Hackathon Team 2",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/TECO-Tech-Station-Hackaton-Team-2/Backend/issues"
+  },
+  "homepage": "https://github.com/TECO-Tech-Station-Hackaton-Team-2/Backend#readme"
+}
