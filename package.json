@@ -2,8 +2,10 @@
   "name": "backend",
   "version": "0.0.1",
   "description": "",
+  "type": "module",
   "main": "src/server.js",
   "scripts": {
+    "start": "nodemon src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +20,10 @@
   "homepage": "https://github.com/Tech-Station-Hackathon/Backend",
   "devDependencies": {
     "eslint": "^8.11.0"
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
   }
 }
