@@ -10,12 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/TECO-Tech-Station-Hackaton-Team-2/Backend.git"
   },
-  "author": "TECO Tech Station Hackathon Team 2",
+  "author": "TECO Hackathon Tech Station Strategy Equipo 2",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/TECO-Tech-Station-Hackaton-Team-2/Backend/issues"
+    "url": "https://github.com/Tech-Station-Hackathon/Backend"
   },
-  "homepage": "https://github.com/TECO-Tech-Station-Hackaton-Team-2/Backend#readme",
+  "homepage": "https://github.com/Tech-Station-Hackathon/Backend",
   "devDependencies": {
     "eslint": "^8.11.0"
   }
