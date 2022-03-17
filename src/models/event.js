@@ -2,12 +2,12 @@ import bcrypt from 'bcrypt';
 import MongoManager from '../dao/mongoManager.js';
 
 export default class Event{ 
-	constructor(file = null, db = 'coderhouse') {
+	constructor(file = null, db = 'hackathon') {
 		this.db = new MongoManager(file, db, 'events');
 	}
 
 	// return all events
-	getAllEventsE(){
+	getAllEvents(){
 		this.db.readData()
 			.then(data => {
 				return data;
@@ -32,9 +32,9 @@ export default class Event{
 
     	// edit event
 
-	modifyEvent(eventID){
+	 modifyEvent(eventID){
 
-        getEventByID(eventID){
+        this.getEventByID(eventID){
             let modEvent ={
             event,
 			description,

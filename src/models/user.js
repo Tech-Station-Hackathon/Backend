@@ -2,7 +2,7 @@ import bcrypt from 'bcrypt';
 import MongoManager from '../dao/mongoManager.js';
 
 export default class User{
-	constructor(file = null, db = 'coderhouse') {
+	constructor(file = null, db = 'hackathon') {
 		this.db = new MongoManager(file, db, 'users');
 	}
 
