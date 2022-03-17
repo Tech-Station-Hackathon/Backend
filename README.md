@@ -27,8 +27,8 @@ _Este proyecto contiene solamente tecnología del lado del cliente. Por esta raz
 
 ## Construido con 🛠️
 
-* [Javascript](https://developer.mozilla.org/es/docs/Web/JavaScript)
-* [NodeJs](https://nodejs.org/es/)
+* [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript)
+* [NodeJS](https://nodejs.org/es/)
 
 
 
