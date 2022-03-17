@@ -1,5 +1,6 @@
-import {events} from '../config/instances.js';
+import { events } from '../config/instances.js';
 import express from 'express';
+import isManager from '../middlewares/isManager.js';
 
 const eventsRouter = express.Router();
 
@@ -15,7 +16,7 @@ eventsRouter.get('/', async (req, res) => {
 	}
 });
 
-eventsRouter.post('/', async (req, res) => {
+eventsRouter.post('/', isManager, async (req, res) => {
 	try{
 		await events.addEvent(
 			req.body.title,
