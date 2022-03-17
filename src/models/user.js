@@ -9,13 +9,7 @@ export default class User{
 
 	// return all users
 	getAllUsers(){
-		this.db.readData()
-			.then(data => {
-				return data;
-			})
-			.catch( err => {
-				return err;
-			});
+		return this.db.readData();
 	}
 
 	// create new user
