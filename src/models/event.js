@@ -8,23 +8,18 @@ export default class Event{
 
 	// return all events
 	getAllEvents(){
-		this.db.readData()
-			.then(data => {
-				return data;
-			})
-			.catch( err => {
-				return err;
-			});
+		return this.db.readData();
 	}
 
 	// create new event
-	addEvent(event, description, date, online, presential){
+	addEvent(title, description, stream, date, isOnline, isPresential){
 		let newEvent = {
-			event,
+			title,
 			description,
+			stream,
 			date,
-			online,
-			presential
+			isOnline,
+			isPresential
 		};
 
 		return this.db.writeData(newEvent);
