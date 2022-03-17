@@ -39,20 +39,23 @@ _Este proyecto contiene solamente tecnología del lado del cliente. Por esta raz
 
 ## API Documentation 
 
-*  [Api Users](/documentation/USERS.md)
+* [Api Users](/documentation/USERS.md)
+* [Api Events](/documentation/EVENTS.md)
 
 ## Construido con 🛠️
 
 * [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript)
 * [NodeJS](https://nodejs.org/es/)
-
+* [Express](https://expressjs.com/es/)
+* [MongoDB](https://www.mongodb.com/es)
+* [JWT](https://jwt.io/)
 
 
 ## Autores ✒️
 
-<a href="https://github.com/Tech-Station-Hackathon/Backend/graphs/contributors">
+<center><a href="https://github.com/Tech-Station-Hackathon/Backend/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Tech-Station-Hackathon/Backend" />
-</a>
+</a></center>
 
 
 ## Licencia 📄
