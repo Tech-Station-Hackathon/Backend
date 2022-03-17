@@ -9,7 +9,7 @@ Descripcion de Sitio Web , su objetivo y funcionalidades.
 
 ---
 
-## ScreenShots :tw-1f4bb:
+## ScreenShots 💻
 
 ![SCREEN1](URL)
 ![SCREEN2](URL)
@@ -68,6 +68,3 @@ La misma no puede ser utilizada con fines comerciales.
 
 
 ---
-
-
-###FIN
