@@ -1,24 +1,33 @@
-# TechStation Academy - Hackaton - Equipo 4 - Desafio XXXX
+# TechStation Academy - Hackathon - Equipo 4 - Desafio XXXX
 
 
 
 ![HACKATON](https://fv9-4.failiem.lv/thumb_show.php?i=tndpnd7mv&view)
 
-## Sobre el Sitio
-Descripcion de Sitio Web , su objetivo y funcionalidades. 
-
 ---
-
-## Actualización 💪
-Se realiza depuración y optimización del código fuente para la entrega final del desafio .
-
 
 ## Comenzando 🚀
 
-URL Glitch - (URL de repositorio)
+Para poder correr el proyecto debemos clonarlo e instalar las dependencias, esto lo podemos hacer de la siguiente manera:
 
-_Si lo que deseas es tenervoy a  una copia en tu computador local, debes bajarte el archivo ZIP._
+```shell
+git clone https://github.com/Tech-Station-Hackathon/Backend
+cd Backend
+npm i
+```
 
+Luego debemos poder nuestras prorpias credecianles en el .env para eso podemos copiar el .env.example que nos muestra las credenciales que necesitamos.
+
+```dotenv
+## Database
+MONGO_URL=url
+```
+
+Una vez que tengamos las dependencias instaladas podemos ejecutarlo de la siguiente manera:
+
+```shell
+npm start
+```
 
 ## Deployment 📦
 
@@ -42,12 +51,12 @@ _Este proyecto contiene solamente tecnología del lado del cliente. Por esta raz
 ## Licencia 📄
 
 Eres libre de analizar/estudiar/forkear/copiar/mejorar este proyecto solamente con fines de aprendizaje. Se agradecerá citar esta fuente cuando uses este proyecto.
-Esta página web se encuentra realizada solo para fines del evento Hackaton de la TechStation Academy. 
+Esta página web se encuentra realizada solo para fines del evento Hackathon de la TechStation Academy. 
 La misma no puede ser utilizada con fines comerciales.
 
 ## Expresiones de Gratitud 🎁
 
-* Un especial Agradecimiento hacia le empresa que nos permitió capacitarnos y formar parte de esta gran experiencia que es el primer Hackaton de la TechStation.
+* Un especial Agradecimiento hacia la empresa que nos permitió capacitarnos y formar parte de esta gran experiencia que es el primer Hackathon de la TechStation.
 
 
 ---
