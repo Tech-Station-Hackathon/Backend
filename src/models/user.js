@@ -18,11 +18,12 @@ export default class User{
 	}
 
 	// create new user
-	addUser(name, lastname, age, email, password, role){
+	addUser(name, lastname, age, avatar, email, password, role){
 		let user = {
 			name,
 			lastname,
 			age,
+			avatar,
 			email,
 			password: bcrypt.hashSync(password, 2),
 			role
