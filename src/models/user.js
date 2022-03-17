@@ -18,18 +18,24 @@ export default class User{
 	}
 
 	// create new user
-	addUser(name, lastname, age, avatar, email, password, role){
-		let user = {
-			name,
-			lastname,
-			age,
-			avatar,
-			email,
-			password: bcrypt.hashSync(password, 2),
-			role
-		};
+	async addUser(name, lastname, age, avatar, email, password, role='user'){
+		let users = await this.getUserByEmail(email);
+		if ( users.length < 1){
+			let user = {
+				name,
+				lastname,
+				age,
+				avatar,
+				email,
+				password: bcrypt.hashSync(password, 2),
+				role
+			};
 
-		return this.db.writeData(user);
+			return this.db.writeData(user);
+		} else {
+			throw Error('The mail is already being used');
+		}
+
 	}
 
 	// chec password to user id
