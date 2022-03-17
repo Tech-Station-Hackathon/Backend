@@ -33,10 +33,10 @@ export default class User{
 	}
 
 	// chec password to user id
-	async checkPassword(id, password){
+	async checkUser(email, password){
 		try {
-			let user = await this.getUserByID(id);
-			return await bcrypt.compare(password, user.password);
+			let user = await this.getUserByEmail(email);
+			return await bcrypt.compare(password, user[0].password);
 		}
 		catch {
 			return false;
@@ -52,5 +52,10 @@ export default class User{
 	// get user by id
 	getUserByID(userID){
 		return this.db.readDataByID(userID);
+	}
+
+	// get user by email
+	getUserByEmail(email){
+		return this.db.readDataByFilter({email});
 	}
 }
