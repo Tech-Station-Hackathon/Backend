@@ -1,6 +1,5 @@
-// import events
-
 import {events} from '../config/instances.js';
+import express from 'express';
 
 const eventsRouter = express.Router();
 
