@@ -1,4 +1,3 @@
-import bcrypt from 'bcrypt';
 import MongoManager from '../dao/mongoManager.js';
 
 export default class Event{ 
