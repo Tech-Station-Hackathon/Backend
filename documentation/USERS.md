@@ -6,6 +6,14 @@ All the routes that we will see next are found under the path `/api/users`. And 
 
 ### GET `/` (*)
 
+A Head with a token is required, for example:
+
+```json
+{
+  "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiNjIzMzhiYzE2ZDAxNzZmMThlYjZhMGQ2In0sImlhdCI6MTY0NzU0OTg5MiwiZXhwIjoxNjQ3NjM2MjkyfQ.lP6bguKIy7_w4SWneflIRH6FF9MrvEcRKVb8Waz5P2U"
+}
+```
+
 Returns the data of the logged in user. This route will return 401 if there is no user logged in. Otherwise, it will return a json with the following format
 
 ```json
