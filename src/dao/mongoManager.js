@@ -10,7 +10,7 @@ export default class MongoManager{
 	async writeData(data){
 		try {
 			await this.client.connect();
-			await this.client.db(this.db).collection(this.collection).insertOne(data);
+			return await this.client.db(this.db).collection(this.collection).insertOne(data);
 		} finally {
 			await this.client.close();
 		}
@@ -37,24 +37,29 @@ export default class MongoManager{
 	}
 
 	async readData(){
-		let returner;
 		try {
 			await this.client.connect();
-			returner = await this.client.db(this.db).collection(this.collection).find().toArray();
+			return await this.client.db(this.db).collection(this.collection).find().toArray();
 		} finally {
 			await this.client.close();
-			return returner;
 		}
 	}
 
 	async readDataByID(id){
-		let returner;
 		try {
 			await this.client.connect();
-			returner = await this.client.db(this.db).collection(this.collection).find({_id:id}).toArray();
+			return await this.client.db(this.db).collection(this.collection).find({_id:id}).toArray();
 		} finally {
 			await this.client.close();
-			return returner;
+		}
+	}
+
+	async readDataByFilter(filter) {
+		try {
+			await this.client.connect();
+			return await this.client.db(this.db).collection(this.collection).find(filter).toArray();
+		} finally {
+			await this.client.close();
 		}
 	}
 }
