@@ -19,7 +19,7 @@ export default class Event{
 	// create new event
 	addEvent(event, description, date, online, presential){
 		let newEvent = {
-            event,
+			event,
 			description,
 			date,
 			online,
@@ -29,25 +29,10 @@ export default class Event{
 		return this.db.writeData(newEvent);
 	}
 
-    	// edit event
-
-	 modifyEvent(eventID){
-
-        this.getEventByID(eventID){
-            let modEvent ={
-            event,
-			description,
-			date,
-			online,
-			presential
-
-        };
-
-        return this.db.writeData(modEvent);
-
-    };
-
-	};
+	// edit event
+	modifyEvent(eventID,data){
+		return this.db.updateData(data,{_id:eventID});
+	}
 
 
 	// delete event
