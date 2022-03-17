@@ -1,21 +1,25 @@
 # TechStation Academy - Hackaton - Equipo 4 - Desafio XXXX
 
 
-![Project's Screenshot]( https://files.fm/f/tndpnd7mv)
 
+![HACKATON](https://fv9-4.failiem.lv/thumb_show.php?i=tndpnd7mv&view)
 
+## Sobre el Sitio
 Descripcion de Sitio Web , su objetivo y funcionalidades. 
 
 ---
 
-## ScreenShots 💪
+## ScreenShots :tw-1f4bb:
+
+![SCREEN1](URL)
+![SCREEN2](URL)
+![SCREEN3](URL)
 
 
 
----
 
 ## Actualización 💪
-Se realiza depuración y optimización del código fuente para la entrega final del desafiojajajaclaro .
+Se realiza depuración y optimización del código fuente para la entrega final del desafio .
 
 
 ## Comenzando 🚀
@@ -32,13 +36,13 @@ _Este proyecto contiene solamente tecnología del lado del cliente. Por esta raz
 
 ## Construido con 🛠️
 
-
 * [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
 * [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
 * [Javascript](https://developer.mozilla.org/es/docs/Web/JavaScript)
 * [Bootstrap](https://getbootstrap.com/)
 * [ReactJs](https://es.reactjs.org/)
 * [NodeJs](https://nodejs.org/es/)
+
 
 
 ## Autores ✒️
@@ -61,3 +65,9 @@ La misma no puede ser utilizada con fines comerciales.
 ## Expresiones de Gratitud 🎁
 
 * Un especial Agradecimiento hacia le empresa que nos permitió capacitarnos y formar parte de esta gran experiencia que es el primer Hackaton de la TechStation.
+
+
+---
+
+
+###FIN
