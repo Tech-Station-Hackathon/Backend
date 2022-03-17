@@ -1,4 +1,5 @@
 import MongoManager from '../dao/mongoManager.js';
+import { ObjectId } from 'mongodb';
 
 export default class Event{ 
 	constructor(file = null, db = 'hackathon') {
@@ -37,11 +38,11 @@ export default class Event{
 
 	// delete event
 	removeEventById(eventID){
-		this.db.deleteByID(eventID);
+		this.db.deleteByID(ObjectId(eventID));
 	}
 
 	// get event by id
 	getEventByID(eventID){
-		return this.db.readDataByID(eventID);
+		return this.db.readDataByID(ObjectId(eventID));
 	}
 }

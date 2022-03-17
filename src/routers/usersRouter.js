@@ -1,3 +1,4 @@
+import { createToken, getIDInSession } from '../tools/token.js';
 import express from 'express';
 import isAuthenticated from '../middlewares/isAuthenticated.js';
 import { users } from '../config/instances.js';
@@ -6,8 +7,10 @@ const usersRouter = express.Router();
 
 usersRouter.get('/', isAuthenticated, async (req, res) => {
 	try{
-		let usersList = await users.getAllUsers();
-		res.send(usersList);
+		const id = getIDInSession(req.headers.token);
+		const user = await users.getUserByID(id);
+		delete user[0].password;
+		res.send({user:user[0]});
 	}
 	catch (error) {
 		res.status(500).send({
@@ -19,7 +22,7 @@ usersRouter.get('/', isAuthenticated, async (req, res) => {
 
 usersRouter.post('/register', async (req, res) => {
 	try{
-		let newUser = await users.addUser(
+		await users.addUser(
 			req.body.name,
 			req.body.lastname,
 			req.body.age,
@@ -27,7 +30,7 @@ usersRouter.post('/register', async (req, res) => {
 			req.body.email,
 			req.body.password
 		);
-		res.send(newUser);
+		res.send();
 	}
 	catch (error) {
 		res.status(500).send({
@@ -39,10 +42,13 @@ usersRouter.post('/register', async (req, res) => {
 
 usersRouter.post('/auth',async (req, res) => {
 	try{
-		if(await users.checkUser(req.body.email,req.body.password)){
+		if(await users.checkUser(req.body.email, req.body.password)){
 			const user = await users.getUserByEmail(req.body.email);
-			const token = user[0]._id;
-			res.send({token});
+			const token = createToken({id:user[0]._id});
+			res.send({
+				token,
+				id: user[0]._id
+			});
 		}else{
 			res.status(401).send({
 				error: 'Internal Server Error',

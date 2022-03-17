@@ -21,6 +21,9 @@ Luego debemos poder nuestras prorpias credecianles en el .env para eso podemos c
 ```dotenv
 ## Database
 MONGO_URL=url
+
+## JWT
+JWT_SECRET=secret
 ```
 
 Una vez que tengamos las dependencias instaladas podemos ejecutarlo de la siguiente manera:
@@ -33,6 +36,10 @@ npm start
 
 _Este proyecto contiene solamente tecnología del lado del cliente. Por esta razón, para ejecutarlo solo es necesario acceder al link en tu browser favorito (Chrome, IE, Edge, Firefox, etc)._
 
+
+## API Documentation 
+
+*  [Api Users](/documentation/USERS.md)
 
 ## Construido con 🛠️
 

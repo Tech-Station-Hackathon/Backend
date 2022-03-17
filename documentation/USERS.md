@@ -10,13 +10,15 @@ Returns the data of the logged in user. This route will return 401 if there is n
 
 ```json
 {
-  "_id": "unique",
-  "name": "Joaquin",
-  "lastname": "Decima",
-  "age": 25,
-  "avatar": "https://joaquindecima.gitlab.io/assets/img/myphoto.jpg",
-  "email": "jdecima@teco.com.ar",
-  "role": "user"
+  "user": {
+    "_id": "62338bc16d0176f18eb6a0d6",
+    "name": "Joaquin",
+    "lastname": "Decima",
+    "age": 25,
+    "avatar": "https://joaquindecima.gitlab.io/assets/img/myphoto.jpg",
+    "email": "jdecima@teco.com.ar",
+    "role": "user"
+  }
 }
 ```
 
@@ -37,14 +39,6 @@ Requires a Body with the following content
 }
 ```
 
-If OK is registered, it returns:
-
-```json
-{
-  "_id": "unique"
-}
-```
-
 ---
 
 ### POST `/auth`
@@ -58,11 +52,12 @@ Requires a Body with the following content
 }
 ```
 
-If OK is registered, it returns:
+If OK is auth, it returns:
 
 ```json
 {
-  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InVuaXF1ZSJ9.MqUfR3jOr9qI40G1CLmT4i51YHS_0iIIypTLR8BoBU8"
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiNjIzMzhiYzE2ZDAxNzZmMThlYjZhMGQ2In0sImlhdCI6MTY0NzU0OTg5MiwiZXhwIjoxNjQ3NjM2MjkyfQ.lP6bguKIy7_w4SWneflIRH6FF9MrvEcRKVb8Waz5P2U",
+  "id": "62338bc16d0176f18eb6a0d6"
 }
 ```
 

@@ -1,5 +1,6 @@
 import bcrypt from 'bcrypt';
 import MongoManager from '../dao/mongoManager.js';
+import { ObjectId } from 'mongodb';
 
 export default class User{
 	constructor(file = null, db = 'hackathon') {
@@ -18,19 +19,24 @@ export default class User{
 	}
 
 	// create new user
-	addUser(name, lastname, age, avatar, email, password, role, segment){
-		let user = {
-			name,
-			lastname,
-			age,
-			avatar,
-			email,
-			password: bcrypt.hashSync(password, 2),
-			role,
-			segment
-		};
+	async addUser(name, lastname, age, avatar, email, password, role='user'){
+		let users = await this.getUserByEmail(email);
+		if ( users.length < 1){
+			let user = {
+				name,
+				lastname,
+				age,
+				avatar,
+				email,
+				password: bcrypt.hashSync(password, 2),
+				role
+			};
 
-		return this.db.writeData(user);
+			return this.db.writeData(user);
+		} else {
+			throw Error('The mail is already being used');
+		}
+
 	}
 
 	// chec password to user id
@@ -47,12 +53,12 @@ export default class User{
 
 	// delete user by id
 	removeUserById(userID){
-		this.db.deleteByID(userID);
+		this.db.deleteByID(ObjectId(userID));
 	}
 
 	// get user by id
 	getUserByID(userID){
-		return this.db.readDataByID(userID);
+		return this.db.readDataByID(ObjectId(userID));
 	}
 
 	// get user by email
