@@ -9,15 +9,6 @@ Descripcion de Sitio Web , su objetivo y funcionalidades.
 
 ---
 
-## ScreenShots 💻
-
-![SCREEN1](URL)
-![SCREEN2](URL)
-![SCREEN3](URL)
-![SCREEN4](URL)
-
-
-
 ## Actualización 💪
 Se realiza depuración y optimización del código fuente para la entrega final del desafio .
 
@@ -36,24 +27,16 @@ _Este proyecto contiene solamente tecnología del lado del cliente. Por esta raz
 
 ## Construido con 🛠️
 
-* [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
-* [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
 * [Javascript](https://developer.mozilla.org/es/docs/Web/JavaScript)
-* [Bootstrap](https://getbootstrap.com/)
-* [ReactJs](https://es.reactjs.org/)
 * [NodeJs](https://nodejs.org/es/)
 
 
 
 ## Autores ✒️
 
-* **AJLIN, DARIO GUSTAVO** - Estudiante Curso de desarrollo FrontEnd)
-* **ALVAREZ GONZALEZ, RUBEN DARIO** - Estudiante Curso de desarrollo BackEnd)
-* **CARRIZO, GABRIEL ERNESTO** - Estudiante Curso de desarrollo FrontEnd)
-* **DECIMA, JOAQUIN** - Estudiante Curso de desarrollo BackEnd)
-* **FIORDA, DIEGO MAXIMILIANO** - Estudiante Curso de desarrollo FrontEnd)
-* **LIVIERO FREYTES, JUAN MARTIN** - Estudiante Curso de desarrollo BackEnd) 
-* **MAJUL, MATIAS ADRIAN** - Estudiante Curso de desarrollo FrontEnd)
+<a href="https://github.com/Tech-Station-Hackathon/Backend/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Tech-Station-Hackathon/Backend" />
+</a>
 
 
 ## Licencia 📄
