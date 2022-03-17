@@ -6,8 +6,8 @@ const eventsRouter = express.Router();
 
 eventsRouter.get('/', async (req, res) => {
 	try{
-		let eventList = await users.getAllEvents();
-		res.send(eventsList);
+		let eventList = await events.getAllEvents();
+		res.send(eventList);
 	}
 	catch {
 		res.status(502).send();

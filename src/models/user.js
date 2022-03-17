@@ -18,7 +18,7 @@ export default class User{
 	}
 
 	// create new user
-	addUser(name, lastname, age, avatar, email, password, role){
+	addUser(name, lastname, age, avatar, email, password, role, segment){
 		let user = {
 			name,
 			lastname,
@@ -26,7 +26,8 @@ export default class User{
 			avatar,
 			email,
 			password: bcrypt.hashSync(password, 2),
-			role
+			role,
+			segment
 		};
 
 		return this.db.writeData(user);
