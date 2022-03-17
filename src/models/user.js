@@ -1,5 +1,6 @@
 import bcrypt from 'bcrypt';
 import MongoManager from '../dao/mongoManager.js';
+import { ObjectId } from 'mongodb';
 
 export default class User{
 	constructor(file = null, db = 'hackathon') {
@@ -52,12 +53,12 @@ export default class User{
 
 	// delete user by id
 	removeUserById(userID){
-		this.db.deleteByID(userID);
+		this.db.deleteByID(ObjectId(userID));
 	}
 
 	// get user by id
 	getUserByID(userID){
-		return this.db.readDataByID(userID);
+		return this.db.readDataByID(ObjectId(userID));
 	}
 
 	// get user by email
