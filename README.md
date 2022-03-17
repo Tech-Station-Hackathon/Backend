@@ -37,6 +37,10 @@ npm start
 _Este proyecto contiene solamente tecnología del lado del cliente. Por esta razón, para ejecutarlo solo es necesario acceder al link en tu browser favorito (Chrome, IE, Edge, Firefox, etc)._
 
 
+## API Documentation 
+
+*  [Api Users](/documentation/USERS.md)
+
 ## Construido con 🛠️
 
 * [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript)
