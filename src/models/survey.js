@@ -1,12 +1,12 @@
 import MongoManager from '../dao/mongoManager.js';
 
-export default class satForm{
+export default class Survey {
 	constructor(file = null, db = 'hackathon') {
 		this.db = new MongoManager(file, db, 'satForms');
 	}
 
-	// return all satisfaction forms
-	getAllsatForms(){
+	// return all surveys
+	getAllSurveys(){
 		this.db.readData()
 			.then(data => {
 				return data;
@@ -16,14 +16,14 @@ export default class satForm{
 			});
 	}
 
-	// create new satisfaction form
-	addSatForm (name, lastname,email,idEvent,txtfeedback,cmbSat,cmbRate,cmbRecomm){
+	// add survey
+	addSurvey (name, lastname,email,idEvent,feedback,cmbSat,cmbRate,cmbRecomm){
 		let satform = {
 			name,
 			lastname,
 			email,
 			idEvent,
-			txtfeedback,
+			feedback,
 			cmbSat, 
 			cmbRate, 
 			cmbRecomm
@@ -31,12 +31,5 @@ export default class satForm{
 		};
 
 		return this.db.writeData(satform);
-	}
-
-	
-
-	// get satisfaction form by Event ID
-	getsatFormByEmail(idEvent){
-		return this.db.readDataByFilter({idEvent});
 	}
 }
