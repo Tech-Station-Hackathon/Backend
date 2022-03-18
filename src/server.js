@@ -15,6 +15,4 @@ app.use(compression());
 app.use('/', routes);
 
 // Start App
-app.listen(PORT, () => {
-	console.log(`Servicio online http://localhost:${PORT}`);
-});
+app.listen(PORT, () => {});
