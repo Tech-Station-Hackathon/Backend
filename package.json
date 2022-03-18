@@ -1,7 +1,7 @@
 {
   "name": "backend",
-  "version": "0.0.1",
-  "description": "",
+  "version": "1.0.0",
+  "description": "Backend TECO Hackathon Tech Station Strategy",
   "type": "module",
   "main": "src/server.js",
   "scripts": {
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/TECO-Tech-Station-Hackaton-Team-2/Backend.git"
   },
-  "author": "TECO Hackathon Tech Station Strategy Equipo 2",
+  "author": "Team 4",
   "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/Tech-Station-Hackathon/Backend"
