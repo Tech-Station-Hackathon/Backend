@@ -1,11 +1,11 @@
 import express from 'express';
-import {eventsubscriptions} from '../config/instances.js';
+import { eventsubscriptions } from '../config/instances.js';
 
 const eventsubscriptionsRouter = express.Router();
 
-eventsubscriptionsRouter.get('/', async (req, res) => {
+eventsubscriptionsRouter.get('/:eventId', async (req, res) => {
 	try{
-		let eventSubscriptionList = await eventsubscriptions.getEventSubscriptionByID();
+		let eventSubscriptionList = await eventsubscriptions.getEventSubscriptionByID(req.params.eventId);
 		res.send(eventSubscriptionList);
 	}
 	catch (error){

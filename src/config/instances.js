@@ -1,5 +1,5 @@
 import Event from '../models/event.js';
-import EventSubscription from '../models/user.js';
+import EventSubscription from '../models/eventSubscription.js';
 import Survey from '../models/survey.js';
 import User from '../models/user.js';
 import 'dotenv/config';
