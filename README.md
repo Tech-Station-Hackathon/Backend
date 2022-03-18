@@ -42,6 +42,7 @@ npm start
 * [Api Users](/documentation/USERS.md)
 * [Api Events](/documentation/EVENTS.md)
 * [Api Suverys](/documentation/SUVERYS.md)
+* [Api Subscription](/documentation/SUBSCRIPTIONS.md)
 
 ## Construido con 🛠️
 
