@@ -1,4 +1,5 @@
 import MongoManager from '../dao/mongoManager.js';
+import {ObjectId} from 'mongodb';
 
 export default class EventSubscription {
 	constructor(file = null, db = 'hackathon') {
@@ -16,8 +17,8 @@ export default class EventSubscription {
 		return this.db.writeData(eventsubscription);
 	}
 
-		// get EventSubscription by Eventid
-		getEventSubscriptionByID(eventId){
-			return this.db.readDataByID(ObjectId(eventId));
-		}
+	// get EventSubscription by Eventid
+	getEventSubscriptionByID(eventId){
+		return this.db.readDataByFilter({eventId: ObjectId(eventId)});
+	}
 }

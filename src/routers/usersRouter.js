@@ -28,7 +28,8 @@ usersRouter.post('/register', async (req, res) => {
 			req.body.age,
 			req.body.avatar,
 			req.body.email,
-			req.body.password
+			req.body.password,
+			req.body.segment
 		);
 		res.send();
 	}

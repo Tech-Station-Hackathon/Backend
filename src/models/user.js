@@ -13,7 +13,7 @@ export default class User{
 	}
 
 	// create new user
-	async addUser(name, lastname, age, avatar, email, password, role='user'){
+	async addUser(name, lastname, age, avatar, email, password, segment , role='user'){
 		let users = await this.getUserByEmail(email);
 		if ( users.length < 1){
 			let user = {
@@ -23,6 +23,7 @@ export default class User{
 				avatar,
 				email,
 				password: bcrypt.hashSync(password, 2),
+				segment,
 				role
 			};
 
