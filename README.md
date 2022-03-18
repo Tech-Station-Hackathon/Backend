@@ -34,13 +34,14 @@ npm start
 
 ## Deployment 📦
 
-_Este proyecto contiene solamente tecnología del lado del cliente. Por esta razón, para ejecutarlo solo es necesario acceder al link en tu browser favorito (Chrome, IE, Edge, Firefox, etc)._
-
+* API Deploy URL: https://techstationhackathon.herokuapp.com/
+* Service: Heroku
 
 ## API Documentation 
 
 * [Api Users](/documentation/USERS.md)
 * [Api Events](/documentation/EVENTS.md)
+* [Api Suverys](/documentation/SUVERYS.md)
 
 ## Construido con 🛠️
 
@@ -53,9 +54,9 @@ _Este proyecto contiene solamente tecnología del lado del cliente. Por esta raz
 
 ## Autores ✒️
 
-<center><a href="https://github.com/Tech-Station-Hackathon/Backend/graphs/contributors">
+<a href="https://github.com/Tech-Station-Hackathon/Backend/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Tech-Station-Hackathon/Backend" />
-</a></center>
+</a>
 
 
 ## Licencia 📄
