@@ -102,7 +102,7 @@ Returns a list with all online events
 
 ### POST `/` (*)
 
-Allows you to add an event. For this the user must be 'manager' and that is validated by the head:
+Allows you to add an event. For this the user must be 'admin' and that is validated by the head:
 
 ```json
 {
