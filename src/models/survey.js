@@ -17,7 +17,7 @@ export default class Survey {
 	}
 
 	// add survey
-	addSurvey (name, lastname,email,idEvent,feedback,cmbSat,cmbRate,cmbRecomm){
+	addSurvey (name, lastname, email, idEvent, feedback, cmbSat, cmbRate,  cmbRecomm){
 		let satform = {
 			name,
 			lastname,

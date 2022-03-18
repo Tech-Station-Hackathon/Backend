@@ -1,12 +1,13 @@
 import express from 'express';
-import {suvery} from '../config/instances.js';
+import isManager from '../middlewares/isManager.js';
+import {suverys} from '../config/instances.js';
 
 const suverysRouter = express.Router();
 
-suverysRouter.get('/', async (req, res) => {
+suverysRouter.get('/:eventId', isManager, async (req, res) => {
 	try{
-		let satFormList = await suvery.getAllSurveys();
-		res.send(satFormList);
+		let suverysList = await suverys.getAllSurveys();
+		res.send(suverysList.filter(suvery => suvery.idEvent == req.params.eventId));
 	}
 	catch (error){
 		res.status(500).send({

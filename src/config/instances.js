@@ -5,4 +5,4 @@ import 'dotenv/config';
 
 export const events = new Event(process.env.MONGO_URL);		// Event Manager Instance
 export const users = new User(process.env.MONGO_URL);		// User Manager Instance
-export const suvery = new Survey(process.env.MONGO_URL);	// survey Manager Instance
+export const suverys = new Survey(process.env.MONGO_URL);	// survey Manager Instance
