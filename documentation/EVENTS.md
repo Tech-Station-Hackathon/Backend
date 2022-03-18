@@ -100,6 +100,35 @@ Returns a list with all online events
 
 ---
 
+### GET `/historical`
+
+Returns a list with all historicals events
+
+```json
+[
+    {
+        "_id": "6233bc9e2f312cb9eb36fe0d",
+        "title": "Victoria del Equipo 4",
+        "description": "La entrega de los alucinantes premios para el Equipo 4 el ganador del Hackathon",
+        "stream": "",
+        "date": "",
+        "isOnline": true,
+        "isPresential": false
+    },
+    {
+        "_id": "6233bea6c5be7e68620334bb",
+        "title": "Quilmes Campion",
+        "description": "El equipo mas importante del mundo mundial campion de la primera nacional",
+        "stream": "",
+        "date": "",
+        "isOnline": true,
+        "isPresential": true
+    }
+]
+```
+
+---
+
 ### POST `/` (*)
 
 Allows you to add an event. For this the user must be 'admin' and that is validated by the head:

@@ -12,10 +12,11 @@ export default class Event{
 	}
 
 	// create new event
-	addEvent(title, description, stream, date, isOnline, isPresential){
+	addEvent(title, description, thumbnail, stream, date, isOnline, isPresential){
 		let newEvent = {
 			title,
 			description,
+			thumbnail,
 			stream,
 			date,
 			isOnline,

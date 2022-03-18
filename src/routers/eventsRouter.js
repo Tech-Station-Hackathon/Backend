@@ -21,6 +21,7 @@ eventsRouter.post('/', isAdmin, async (req, res) => {
 		await events.addEvent(
 			req.body.title,
 			req.body.description,
+			req.body.thumbnail,
 			req.body.stream,
 			req.body.date,
 			req.body.isOnline,
@@ -51,6 +52,18 @@ eventsRouter.get('/online', async (req, res) => {
 	try{
 		let eventsList = await events.getAllEvents();
 		res.send(eventsList.filter(event => event.isOnline));
+	} catch(error) {
+		res.status(500).send({
+			error: 'Internal Server Error',
+			message: error
+		});
+	}
+});
+
+eventsRouter.get('/historical', async (req, res) => {
+	try{
+		let eventsList = await events.getAllEvents();
+		res.send(eventsList.filter(event => new Date(event.date) < new Date()));
 	} catch(error) {
 		res.status(500).send({
 			error: 'Internal Server Error',
